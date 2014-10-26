@@ -1,0 +1,37 @@
+{
+  "Quotes": {
+    "author": [
+      {
+        "sname": "Thoreau",
+        "fname": "Henry David",
+        "dob": "1817",
+        "dod": "1862",
+        "link": "http://en.wikipedia.org/wiki/Henry_David_Thoreau"
+      },
+      {
+        "sname": "Nietzsche",
+        "fname": "Friedrich",
+        "dob": "1844",
+        "dod": "1900",
+        "link": "http://en.wikipedia.org/wiki/Friedrich_Nietzsche"
+      },
+      {
+        "sname": "Nietzsche",
+        "fname": "Friedrich",
+        "dob": "1844",
+        "dod": "1900",
+        "link": "http://en.wikipedia.org/wiki/Friedrich_Nietzsche"
+      }
+    ],
+    "category": [
+      { "name": "romantic" },
+      { "name": "romantic" },
+      { "name": "romantic" }
+    ],
+    "quote": [
+      { "text": "There is no remedy but to love more." },
+      { "text": "There is always some madness in love. But there is also always some reason in madness." },
+      { "text": "There is always some madness in love. But there is also always some reason in madness." }
+    ]
+  }
+}

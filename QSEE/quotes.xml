@@ -1,0 +1,308 @@
+<?xml version = "1.0"?>
+<qsee_superlite release="1" major="1" minor="1" meta_model="multi-CASE" mm_ver="9">
+  <child metatype="Project" next_oid="40" oid="1" version="2" name="C:\xampp\htdocs\uwe2\dsa\1\QSEE\quotes.qsee" icon="75">
+    <child metatype="qSEE_Help" font="Arial" url="C:\xampp\htdocs\uwe2\dsa\1\QSEE\1.xsd" body="" title="" script="" next_oid="1" oid="2" version="0" name="Help" icon="4294967295">
+    </child>
+
+    <child metatype="Entity Relationship Diagram" bg_colour="16777215" next_oid="1" oid="3" version="7" name="Quotes" icon="4">
+      <child metatype="HLabel" font="Arial" font_size="56" style="18" angle="0" x1="100" y1="100" x2="276" y2="162" z1="0" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="23" oid="4" version="8" name="Label" icon="4294967295">
+        <td_item>Quotes</td_item>
+
+      </child>
+
+      <child metatype="ERD Entity" shape_style="1" shape="rbox" x1="200" y1="325" x2="775" y2="850" z1="1" z2="0" min_w="320" min_h="198" max_w="4000" max_h="4000" bg_col="64" fg_col="16777192" link_move="2" flags="23" oid="5" version="22" name="category" icon="6">
+        <child metatype="ERD Entity Name" font="Arial" font_size="38" style="8" angle="0" x1="203" y1="0" x2="371" y2="48" z1="2" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="22" oid="6" version="1" name="ERD Entity Name" icon="4294967295">
+          <td_item>category</td_item>
+
+        </child>
+
+        <child metatype="Entity Life History Diagram" bg_colour="16777215" next_oid="1" oid="7" version="3" name="category ELH" icon="34">
+          <child metatype="HLabel" font="Arial" font_size="56" style="2" angle="0" x1="100" y1="100" x2="808" y2="162" z1="0" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="23" oid="8" version="7" name="Label" icon="4294967295">
+            <td_item>Entity Life History of category</td_item>
+
+          </child>
+
+          <child metatype="ELH Entity" shape_style="1" shape="rect" x1="600" y1="400" x2="860" y2="560" z1="1" z2="0" min_w="120" min_h="75" max_w="4000" max_h="4000" bg_col="0" fg_col="16752704" link_move="2" flags="23" oid="9" version="2" name="category" icon="4294967295">
+            <child metatype="SmallTextArea" font="Arial" font_size="31" style="0" x1="20" y1="20" x2="230" y2="130" z1="2" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="22" oid="10" version="1" name="BaseText" icon="4294967295">category
+            </child>
+            <property oid="10"/>
+
+          </child>
+          <property oid="8"/>
+          <value size="1" value="00"/>
+          <value size="1" value="00"/>
+          <value value="0"/>
+          <property oid="9"/>
+
+        </child>
+
+        <child metatype="ERD Attribute" font="Arial" font_size="35" style="3" angle="0" x1="16" y1="58" x2="230" y2="104" z1="9" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="19" oid="25" version="20" name="cid" icon="85">          <value value="7"/>
+          <value size="2" value="38,00"/>
+          <value size="2" value="32,00"/>
+          <value size="8" value="49,4E,54,45,47,45,52,00"/>
+          <value size="1" value="00"/>
+          <value size="1" value="00"/>
+          <value value="1"/>
+
+          <td_item>cid:INTEGER</td_item>
+
+        </child>
+
+        <child metatype="ERD Attribute" font="Arial" font_size="35" style="1" angle="0" x1="16" y1="108" x2="288" y2="154" z1="10" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="19" oid="26" version="14" name="name" icon="21">          <value value="2"/>
+          <value size="4" value="31,32,38,00"/>
+          <value size="2" value="32,00"/>
+          <value size="8" value="56,41,52,43,48,41,52,00"/>
+          <value size="1" value="00"/>
+          <value size="1" value="00"/>
+          <value value="2"/>
+
+          <td_item>name:VARCHAR</td_item>
+
+        </child>
+        <property oid="6"/>
+        <value size="1" value="00"/>
+        <property oid="7"/>
+
+      </child>
+
+      <child metatype="ERD Entity" shape_style="1" shape="rbox" x1="1925" y1="275" x2="2725" y2="850" z1="3" z2="0" min_w="336" min_h="398" max_w="4000" max_h="4000" bg_col="64" fg_col="16777192" link_move="2" flags="23" oid="11" version="46" name="author" icon="6">
+        <child metatype="ERD Entity Name" font="Arial" font_size="38" style="8" angle="0" x1="337" y1="0" x2="463" y2="48" z1="4" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="22" oid="12" version="1" name="ERD Entity Name" icon="4294967295">
+          <td_item>author</td_item>
+
+        </child>
+
+        <child metatype="Entity Life History Diagram" bg_colour="16777215" next_oid="1" oid="13" version="3" name="author ELH" icon="34">
+          <child metatype="HLabel" font="Arial" font_size="56" style="2" angle="0" x1="100" y1="100" x2="748" y2="162" z1="0" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="23" oid="14" version="7" name="Label" icon="4294967295">
+            <td_item>Entity Life History of author</td_item>
+
+          </child>
+
+          <child metatype="ELH Entity" shape_style="1" shape="rect" x1="600" y1="400" x2="860" y2="560" z1="1" z2="0" min_w="120" min_h="75" max_w="4000" max_h="4000" bg_col="0" fg_col="16752704" link_move="2" flags="23" oid="15" version="2" name="author" icon="4294967295">
+            <child metatype="SmallTextArea" font="Arial" font_size="31" style="0" x1="20" y1="20" x2="230" y2="130" z1="2" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="22" oid="16" version="1" name="BaseText" icon="4294967295">author
+            </child>
+            <property oid="16"/>
+
+          </child>
+          <property oid="14"/>
+          <value size="1" value="00"/>
+          <value size="1" value="00"/>
+          <value value="0"/>
+          <property oid="15"/>
+
+        </child>
+
+        <child metatype="ERD Attribute" font="Arial" font_size="35" style="3" angle="0" x1="16" y1="58" x2="234" y2="104" z1="11" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="19" oid="27" version="44" name="aid" icon="85">          <value value="7"/>
+          <value size="2" value="38,00"/>
+          <value size="2" value="32,00"/>
+          <value size="8" value="49,4E,54,45,47,45,52,00"/>
+          <value size="1" value="00"/>
+          <value size="1" value="00"/>
+          <value value="1"/>
+
+          <td_item>aid:INTEGER</td_item>
+
+        </child>
+
+        <child metatype="ERD Attribute" font="Arial" font_size="35" style="1" angle="0" x1="16" y1="108" x2="304" y2="154" z1="12" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="19" oid="28" version="38" name="sname" icon="21">          <value value="0"/>
+          <value size="3" value="36,34,00"/>
+          <value size="2" value="32,00"/>
+          <value size="8" value="56,41,52,43,48,41,52,00"/>
+          <value size="1" value="00"/>
+          <value size="1" value="00"/>
+          <value value="2"/>
+
+          <td_item>sname:VARCHAR</td_item>
+
+        </child>
+
+        <child metatype="ERD Attribute" font="Arial" font_size="35" style="1" angle="0" x1="16" y1="158" x2="298" y2="204" z1="13" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="19" oid="29" version="32" name="fname" icon="21">          <value value="0"/>
+          <value size="3" value="36,34,00"/>
+          <value size="2" value="32,00"/>
+          <value size="8" value="56,41,52,43,48,41,52,00"/>
+          <value size="1" value="00"/>
+          <value size="1" value="00"/>
+          <value value="3"/>
+
+          <td_item>fname:VARCHAR</td_item>
+
+        </child>
+
+        <child metatype="ERD Attribute" font="Arial" font_size="35" style="1" angle="0" x1="16" y1="208" x2="262" y2="254" z1="14" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="19" oid="30" version="26" name="dob" icon="21">          <value value="0"/>
+          <value size="3" value="31,36,00"/>
+          <value size="2" value="32,00"/>
+          <value size="8" value="56,41,52,43,48,41,52,00"/>
+          <value size="1" value="00"/>
+          <value size="1" value="00"/>
+          <value value="4"/>
+
+          <td_item>dob:VARCHAR</td_item>
+
+        </child>
+
+        <child metatype="ERD Attribute" font="Arial" font_size="35" style="1" angle="0" x1="16" y1="258" x2="262" y2="304" z1="15" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="19" oid="31" version="20" name="dod" icon="21">          <value value="0"/>
+          <value size="3" value="31,36,00"/>
+          <value size="2" value="32,00"/>
+          <value size="8" value="56,41,52,43,48,41,52,00"/>
+          <value size="1" value="00"/>
+          <value size="1" value="00"/>
+          <value value="5"/>
+
+          <td_item>dod:VARCHAR</td_item>
+
+        </child>
+
+        <child metatype="ERD Attribute" font="Arial" font_size="35" style="1" angle="0" x1="16" y1="308" x2="258" y2="354" z1="16" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="19" oid="32" version="14" name="link" icon="21">          <value value="0"/>
+          <value size="4" value="31,32,38,00"/>
+          <value size="2" value="32,00"/>
+          <value size="8" value="56,41,52,43,48,41,52,00"/>
+          <value size="1" value="00"/>
+          <value size="1" value="00"/>
+          <value value="6"/>
+
+          <td_item>link:VARCHAR</td_item>
+
+        </child>
+        <property oid="12"/>
+        <value size="1" value="00"/>
+        <property oid="13"/>
+
+      </child>
+
+      <child metatype="ERD Entity" shape_style="1" shape="rbox" x1="500" y1="1025" x2="1250" y2="1625" z1="5" z2="0" min_w="290" min_h="198" max_w="4000" max_h="4000" bg_col="64" fg_col="16777192" link_move="2" flags="23" oid="17" version="22" name="quote" icon="6">
+        <child metatype="ERD Entity Name" font="Arial" font_size="38" style="8" angle="0" x1="319" y1="0" x2="431" y2="48" z1="6" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="22" oid="18" version="1" name="ERD Entity Name" icon="4294967295">
+          <td_item>quote</td_item>
+
+        </child>
+
+        <child metatype="Entity Life History Diagram" bg_colour="16777215" next_oid="1" oid="19" version="3" name="quote ELH" icon="34">
+          <child metatype="HLabel" font="Arial" font_size="56" style="2" angle="0" x1="100" y1="100" x2="734" y2="162" z1="0" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="23" oid="20" version="7" name="Label" icon="4294967295">
+            <td_item>Entity Life History of quote</td_item>
+
+          </child>
+
+          <child metatype="ELH Entity" shape_style="1" shape="rect" x1="600" y1="400" x2="860" y2="560" z1="1" z2="0" min_w="120" min_h="75" max_w="4000" max_h="4000" bg_col="0" fg_col="16752704" link_move="2" flags="23" oid="21" version="2" name="quote" icon="4294967295">
+            <child metatype="SmallTextArea" font="Arial" font_size="31" style="0" x1="20" y1="20" x2="230" y2="130" z1="2" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="22" oid="22" version="1" name="BaseText" icon="4294967295">quote
+            </child>
+            <property oid="22"/>
+
+          </child>
+          <property oid="20"/>
+          <value size="1" value="00"/>
+          <value size="1" value="00"/>
+          <value value="0"/>
+          <property oid="21"/>
+
+        </child>
+
+        <child metatype="ERD Attribute" font="Arial" font_size="35" style="3" angle="0" x1="16" y1="58" x2="234" y2="104" z1="7" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="19" oid="23" version="20" name="qid" icon="85">          <value value="7"/>
+          <value size="2" value="38,00"/>
+          <value size="2" value="32,00"/>
+          <value size="8" value="49,4E,54,45,47,45,52,00"/>
+          <value size="1" value="00"/>
+          <value size="1" value="00"/>
+          <value value="1"/>
+
+          <td_item>qid:INTEGER</td_item>
+
+        </child>
+
+        <child metatype="ERD Attribute" font="Arial" font_size="35" style="1" angle="0" x1="16" y1="108" x2="258" y2="154" z1="8" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="19" oid="24" version="14" name="text" icon="21">          <value value="0"/>
+          <value size="4" value="32,35,36,00"/>
+          <value size="2" value="32,00"/>
+          <value size="8" value="56,41,52,43,48,41,52,00"/>
+          <value size="1" value="00"/>
+          <value size="1" value="00"/>
+          <value value="2"/>
+
+          <td_item>text:VARCHAR</td_item>
+
+        </child>
+        <property oid="18"/>
+        <value size="1" value="00"/>
+        <property oid="19"/>
+
+      </child>
+
+      <child metatype="ERD Relationship" s_restrict="1" d_restrict="1" s_stick="1" d_stick="1" width="0" linestyle="1" sourcestyle="1" deststyle="1" Source="17" Dest="11" x1="1235" y1="823" x2="1940" y2="1153" z1="17" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="23" oid="33" version="16" name="author quotes" icon="126">
+        <child metatype="ERD RelLab" font="Arial" font_size="31" style="0" angle="0" x1="337" y1="149" x2="537" y2="191" z1="18" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="8388608" fg_col="16777215" link_move="2" flags="23" oid="34" version="9" name="author quotes" icon="4294967295">
+          <td_item>author quotes</td_item>
+
+        </child>
+
+        <child metatype="ERD RelLab" font="Arial" font_size="31" style="0" angle="0" x1="20" y1="230" x2="100" y2="272" z1="19" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="0" flags="23" oid="35" version="9" name="quote" icon="4294967295">
+          <td_item>quote</td_item>
+
+        </child>
+
+        <child metatype="ERD RelLab" font="Arial" font_size="31" style="0" angle="0" x1="475" y1="20" x2="567" y2="62" z1="20" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="1" flags="23" oid="36" version="9" name="author" icon="4294967295">
+          <td_item>author</td_item>
+
+        </child>
+        <property oid="34"/>
+        <property oid="35"/>
+        <property oid="36"/>
+        <value size="1" value="00"/>
+        <value value="2"/>
+        <value value="0"/>
+        <value value="257"/>
+        <value size="4" value="3F,40,7E,00"/>
+
+        <POINT x="1250" y="1138"/>
+        <POINT x="1925" y="838"/>
+
+        <s_decor style="5" length="25" width="15" gap="0" is_centre="0"/>
+        <s_decor style="12" length="14" width="14" gap="0" is_centre="0"/>
+        <d_decor style="12" length="14" width="14" gap="0" is_centre="0"/>
+        <d_decor style="12" length="14" width="14" gap="0" is_centre="0"/>
+
+
+      </child>
+
+      <child metatype="ERD Relationship" s_restrict="1" d_restrict="1" s_stick="1" d_stick="1" width="0" linestyle="1" sourcestyle="1" deststyle="1" Source="5" Dest="17" x1="557" y1="835" x2="776" y2="1040" z1="21" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="2" flags="23" oid="37" version="16" name="quote categories" icon="125">
+        <child metatype="ERD RelLab" font="Arial" font_size="31" style="0" angle="0" x1="94" y1="87" x2="336" y2="129" z1="22" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="8388608" fg_col="16777215" link_move="2" flags="23" oid="38" version="9" name="quote categories" icon="4294967295">
+          <td_item>quote categories</td_item>
+
+        </child>
+
+        <child metatype="ERD RelLab" font="Arial" font_size="31" style="0" angle="0" x1="20" y1="20" x2="66" y2="62" z1="23" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="0" flags="23" oid="39" version="9" name="cat" icon="4294967295">
+          <td_item>cat</td_item>
+
+        </child>
+
+        <child metatype="ERD RelLab" font="Arial" font_size="31" style="0" angle="0" x1="80" y1="105" x2="160" y2="147" z1="24" z2="0" min_w="0" min_h="0" max_w="20000" max_h="20000" bg_col="0" fg_col="16777215" link_move="1" flags="23" oid="40" version="9" name="quote" icon="4294967295">
+          <td_item>quote</td_item>
+
+        </child>
+        <property oid="38"/>
+        <property oid="39"/>
+        <property oid="40"/>
+        <value size="1" value="00"/>
+        <value value="3"/>
+        <value value="0"/>
+        <value value="257"/>
+        <value size="4" value="3F,40,7E,00"/>
+
+        <POINT x="572" y="850"/>
+        <POINT x="761" y="1025"/>
+
+        <s_decor style="5" length="25" width="15" gap="0" is_centre="0"/>
+        <s_decor style="12" length="14" width="14" gap="0" is_centre="0"/>
+        <d_decor style="5" length="25" width="15" gap="0" is_centre="0"/>
+        <d_decor style="12" length="14" width="14" gap="0" is_centre="0"/>
+
+
+      </child>
+      <property oid="4"/>
+      <value size="1" value="00"/>
+      <value size="1" value="00"/>
+      <value value="1"/>
+      <value value="16"/>
+      <value size="5" value="53,51,4C,32,00"/>
+      <value size="1" value="00"/>
+      <value value="16777192"/>
+      <value size="4" value="3F,40,7E,00"/>
+      <value size="1" value="00"/>
+
+    </child>
+  </child>
+</qsee_superlite>

@@ -1,0 +1,122 @@
+<!-- Auto-Generated XML Schema by QSEE-SuperLite multi-CASE (c) 2001-2004 QSEE-Technologies Ltd. 
+     www.qsee-technologies.com 
+
+     note: spaces within Element/Type names etc. have been replaced by underscores (_)
+
+     Verbose generation: ON
+
+     Root Element Name :Quotes
+
+     This XML Schema is generated from an entity relationship model.
+     ERD Entities are mapped to <xsd:element declarations containing <xsd:complexType .. declarations
+     and their attributes are mapped to <xsd:element .. declarations containg simple types
+     Primary keys and foreign key constrains are included as 'key' and 'keyref' elements
+     Sub-Types are included as elements that may be optionally contained by their super-type parents.
+-->
+
+
+<!-- To reference this XML Schema from within your conforming XML document insert a xsi:schemaLocation attribute
+     declaration within an XML element.
+
+-->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+ <xsd:annotation>
+  <xsd:documentation xml:lang="en">
+    XML Schema file for Quotes
+  </xsd:documentation>
+ </xsd:annotation>
+
+
+ <!-- Define the root element, using the name of the ERD - 'Quotes'
+      This contains all top level elements as a sequence -->
+ <xsd:element name="Quotes">
+  <xsd:complexType>
+    <xsd:sequence>
+
+      <!-- Define a <xsd:element> to represent the 'author' entity -->
+      <xsd:element name="author" minOccurs="0" maxOccurs="unbounded">
+
+        <!-- Use a <xsd:complexType> to model the contents of the 'author' entity -->
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="aid" type="xsd:integer"/>
+            <xsd:element name="sname" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="fname" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="dob" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="dod" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="link" type="xsd:string" minOccurs="0"/>
+          </xsd:sequence>
+        </xsd:complexType>
+
+        <!-- Use <xsd:key> element to specify the key(s) -->
+        <xsd:key name="author_Key">
+          <xsd:selector xpath="."/>
+          <xsd:field xpath="aid"/>
+        </xsd:key>
+
+      </xsd:element>
+      <!-- end of element </author> -->
+
+      <!-- Define a <xsd:element> to represent the 'category' entity -->
+      <xsd:element name="category" minOccurs="0" maxOccurs="unbounded">
+
+        <!-- Use a <xsd:complexType> to model the contents of the 'category' entity -->
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="cid" type="xsd:integer"/>
+            <xsd:element name="name" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+
+        <!-- Use <xsd:key> element to specify the key(s) -->
+        <xsd:key name="category_Key">
+          <xsd:selector xpath="."/>
+          <xsd:field xpath="cid"/>
+        </xsd:key>
+
+      </xsd:element>
+      <!-- end of element </category> -->
+
+      <!-- Define a <xsd:element> to represent the 'quote' entity -->
+      <xsd:element name="quote" minOccurs="0" maxOccurs="unbounded">
+
+        <!-- Use a <xsd:complexType> to model the contents of the 'quote' entity -->
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="qid" type="xsd:integer"/>
+            <xsd:element name="text" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="fk1_aid"/>    <!-- model exactly 1 reference to author -->
+            <xsd:element name="fk2_cid" maxOccurs="unbounded"/>    <!-- model one-many references to category -->
+          </xsd:sequence>
+        </xsd:complexType>
+
+        <!-- Use <xsd:key> element to specify the key(s) -->
+        <xsd:key name="quote_Key">
+          <xsd:selector xpath="."/>
+          <xsd:field xpath="qid"/>
+        </xsd:key>
+
+        <!-- Use <xsd:keyref> element to specify a foreign key to the 'author' entity -->
+        <xsd:keyref name="quote_FK1" refer="author_Key">
+          <xsd:selector xpath="."/>
+          <xsd:field xpath="fk1_aid"/>
+        </xsd:keyref>
+
+        <!-- Use <xsd:keyref> element to specify a foreign key to the 'category' entity -->
+        <xsd:keyref name="quote_FK2" refer="category_Key">
+          <xsd:selector xpath="."/>
+          <xsd:field xpath="fk2_cid"/>
+        </xsd:keyref>
+
+      </xsd:element>
+      <!-- end of element </quote> -->
+    </xsd:sequence>
+  </xsd:complexType>
+ </xsd:element>
+ <!-- end of root element </Quotes> -->
+
+</xsd:schema>
+
+<!-- End of XML Schema file auto-generation -->
